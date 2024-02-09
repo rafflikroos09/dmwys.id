@@ -5,9 +5,24 @@ function getData() {
   let subject = document.getElementById("subject").value;
   let message = document.getElementById("message").value;
 
-  console.log(name);
-  console.log(email);
-  console.log(phone);
-  console.log(subject);
-  console.log(message);
+  if ((name = "")) {
+    return alert("Please type your name");
+  } else if (email == "") {
+    return alert("Please type your email");
+  } else if (phone == "") {
+    return alert("Please type your No Phone");
+  } else if (subject == "") {
+    return alert("Please type your subject");
+  } else if (message == "") {
+    return alert("Plese type your message");
+  }
+
+  const data = {
+    name,
+    email,
+    phone,
+    subject,
+    message,
+  };
+  console.log(data);
 }
