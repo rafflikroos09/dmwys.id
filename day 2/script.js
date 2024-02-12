@@ -11,11 +11,16 @@ function getData() {
     return alert("Please type your email");
   } else if (phone == "") {
     return alert("Please type your No Phone");
-  } else if (subject == "") {
-    return alert("Please type your subject");
+    // } else if (subject == "") {
+    //   return alert("Please type your subject");
   } else if (message == "") {
     return alert("Plese type your message");
   }
+
+  const emailDestination = "hi.mhmd.raffli09@gmail.com";
+  let a = document.createElement("a");
+  a.href = `mailto:${emailDestination}?subject=${subject}&body= halo bang nama saya, ${name}, saya ingin ${message}. bisakah anda menghubungi saya ${phone}`;
+  a.click();
 
   const data = {
     name,
