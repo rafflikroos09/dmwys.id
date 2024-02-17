@@ -104,3 +104,64 @@ nav .left ul li a:hover {
   width: 85%;
   margin: 30px auto;
 }
+
+/* ADD PROJECT */
+
+.project {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.project span {
+  color: orangered;
+}
+
+form {
+  width: 350px;
+  margin: 50px auto;
+}
+
+form .date {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+form .date input {
+  width: 100%;
+}
+form .date .date-3 {
+  padding-left: 40px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(0, 0, 0);
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+form label {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+form div button {
+  margin-left: 80%;
+  background-color: orangered;
+  padding: 8px 20px;
+  color: white;
+  border-radius: 50px;
+  border-style: none;
+  font-size: 15px;
+}
+
+form .tech {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
