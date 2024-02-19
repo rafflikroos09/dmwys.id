@@ -10,6 +10,11 @@ nav {
   align-items: center;
   background-color: rgb(181, 181, 181);
   padding: 15px 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
 }
 
 nav .left ul {
@@ -54,9 +59,13 @@ nav .left ul li a:hover {
   font-size: 20px;
 }
 
+nav .hamburger {
+  display: none;
+}
+
 /* CONTENT */
 #content {
-  width: 1000px;
+  width: 80%;
   margin: 50px auto;
   background-color: rgb(241, 240, 240);
   border-radius: 20px;
@@ -140,4 +149,94 @@ nav .left ul li a:hover {
   margin: 10px 0 0;
   font-size: 14px;
   color: #666;
+}
+
+/* RESPONSIVE LAYOUT */
+
+@media screen and (max-width: 850px) {
+  #content {
+    display: block;
+    margin-top: 130px;
+  }
+
+  .card {
+    width: 50%;
+    margin-top: -20;
+    margin-right: 100;
+  }
+
+  #content .content-2 h1 {
+    font-size: 23px;
+  }
+
+  #content .content-2 p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  nav {
+    padding: 15px;
+  }
+
+  nav .left ul li {
+    display: none;
+  }
+
+  nav .right {
+    display: none;
+  }
+
+  nav .hamburger {
+    display: block;
+  }
+
+  /* Responsive Home */
+
+  #content {
+    display: block;
+    margin-top: 130px;
+  }
+
+  #content .content-2 h1 {
+    font-size: 18px;
+  }
+
+  #content .content-2 p {
+    font-size: 12px;
+  }
+
+  .card {
+    width: 80%;
+    margin-top: -20;
+  }
+
+  .content-2 .btn {
+    font-size: 13px;
+    padding: 5px 15px 5px 15px;
+  }
+
+  .content-2 a {
+    font-size: 13px;
+  }
+
+  .content-2 a svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .icon {
+    gap: 30px;
+  }
+
+  .icon .icon-2 {
+    width: 10px;
+    height: 10px;
+    border: none;
+  }
+  .icon .icon-2 svg {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 50%;
+  }
 }
