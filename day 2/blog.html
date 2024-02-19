@@ -32,7 +32,7 @@
     <div class="title">
       <h1><span>Dumbways</span> Web App</h1>
     </div>
-    <section id="blog">
+    <section id="blog-section">
       <div class="blog-img">
         <img src="assets/img/blog.jpg" alt="" />
       </div>
@@ -93,54 +93,63 @@
     <!-- ADD PROJECT -->
     <section>
       <div class="project">ADD <span>MY PROJECT</span></div>
-      <form action="">
-        <div class="name">
+      <form onsubmit="addBLog(event)">
+        <div>
           <label for="name">Project Name</label>
-          <input type="text" />
+          <input type="text" id="name" />
         </div>
         <div class="date">
           <div class="date-2">
             <label for="start" class="start">Start Date</label>
-            <input type="text" />
+            <input type="text" id="start" />
           </div>
 
           <div class="date-3">
             <label for="end" class="end">End Date</label>
-            <input type="text" />
+            <input type="text" id="end" />
           </div>
         </div>
         <div class="description">
           <label for="">Description</label>
-          <textarea name="description" id="" cols="30" rows="10"></textarea>
+          <textarea name="description" id="description" cols="30" rows="10"></textarea>
         </div>
         <label for="tech">Technologis</label>
         <div class="tech">
-          <label for="nodejs">Node JS</label>
           <input type="checkbox" name="nodejs" id="nodejs" />
-          <!-- <div class="nodejs">
-            <label for="nodejs">Node JS</label>
-            <input type="checkbox" name="nodejs" id="nodejs" />
-          </div>
-          <div class="nodejs">
-            <label for="nodejs">Node JS</label>
-            <input type="checkbox" name="nodejs" id="nodejs" />
-          </div>
-          <div class="nodejs">
-            <label for="nodejs">Node JS</label>
-            <input type="checkbox" name="nodejs" id="nodejs" />
-          </div>
-          <div class="nodejs">
-            <label for="nodejs">Node JS</label>
-            <input type="checkbox" name="nodejs" id="nodejs" />
-          </div> -->
+          <label for="nodejs">React.JS</label>
+
+          <input type="checkbox" name="nodejs" id="nodejs" />
+          <label for="nodejs">Node.JS</label>
+        </div>
+
+        <div class="tech-2">
+          <input type="checkbox" name="nodejs" id="nodejs" />
+          <label for="nodejs">Next.JS</label>
+
+          <input type="checkbox" name="nodejs" id="nodejs" />
+          <label for="nodejs">Typescript</label>
+        </div>
+
+        <label class="upload-img"> Upload Image</label>
+        <div class="input-blog-image-group">
+          <label for="input-blog-image">
+            <p>Chose</p>
+            <img src="assets/img/file.png" alt="file" />
+          </label>
+          <input type="file" id="input-blog-image" hidden />
         </div>
 
         <div>
           <button type="button">Submit</button>
         </div>
       </form>
+
+      <hr class="line" />
+      <div id="contents" class="blog-list">
+        <!-- dynamic content would be here -->
+      </div>
     </section>
     <!-- ADD PROJECT END -->
-    <script></script>
+    <script src="assets/script/blog.js"></script>
   </body>
 </html>

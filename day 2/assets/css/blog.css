@@ -65,7 +65,7 @@ nav .left ul li a:hover {
   color: orangered;
 }
 
-#blog {
+#blog-section {
   width: 85%;
   margin: 30px auto;
   border-radius: 20px;
@@ -135,6 +135,18 @@ form .date .date-3 {
   padding-left: 40px;
 }
 
+.name input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(0, 0, 0);
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.date2,
+.date3,
+.descrption,
 input,
 textarea {
   width: 100%;
@@ -158,10 +170,126 @@ form div button {
   border-radius: 50px;
   border-style: none;
   font-size: 15px;
+  cursor: pointer;
 }
 
 form .tech {
   display: flex;
-  justify-content: center;
   margin-top: 30px;
+  margin-bottom: 5px;
+  font-weight: 200;
+  margin-left: -20px;
+}
+
+form .tech label {
+  margin-right: 80px;
+}
+
+form .tech-2 {
+  display: flex;
+  margin-bottom: 20px;
+  font-weight: 200;
+  margin-left: -20px;
+}
+
+form .tech-2 label {
+  margin-right: 80px;
+}
+
+form .input-blog-image-group {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 5px;
+  margin-top: 20px;
+  margin-bottom: 35px;
+  background: #f4f3f3;
+  border: 1px solid #c4c4c4;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+form .input-blog-image-group label p {
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+form .input-blog-image-group label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* * Blog list * */
+
+.blog .blog-list {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.blog .blog-list .blog-list-item {
+  width: 80%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 2px solid #dbdbdb;
+  border-radius: 8px;
+  display: flex;
+}
+
+.blog .blog-list .blog-list-item .blog-image {
+  flex: 1;
+}
+
+.blog .blog-list .blog-list-item .blog-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.blog .blog-list .blog-list-item .blog-content {
+  padding-left: 20px;
+  flex: 2;
+}
+
+.blog .blog-list .btn-group {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.blog .blog-list .btn-group .btn-edit {
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 4px;
+  background: #dbdbdb;
+}
+
+.blog-list .btn-group .btn-post {
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 4px;
+  background: #ec4d37;
+  color: #fff;
+}
+
+.blog-list h1 a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.blog-list .detail-blog-content {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.blog-list .blog-list-item p {
+  margin-top: 20px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: justify;
 }
