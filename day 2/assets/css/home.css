@@ -63,6 +63,28 @@ nav .hamburger {
   display: none;
 }
 
+#hamburger-bars-items {
+  display: none;
+  margin-top: -65px;
+  position: fixed;
+  width: 100%;
+}
+
+#hamburger-bars-items a {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.589);
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px;
+}
+
+/* #hamburger-bars-items a.active {
+  background-color: rgb(192, 132, 53);
+} */
+
 /* CONTENT */
 #content {
   width: 80%;
@@ -151,7 +173,7 @@ nav .hamburger {
   color: #666;
 }
 
-/* RESPONSIVE LAYOUT */
+/* RESPONSIVE LAYOUT ---------------------------------------------------------------*/
 
 @media screen and (max-width: 850px) {
   #content {

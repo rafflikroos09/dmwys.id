@@ -26,9 +26,17 @@
       </div>
 
       <div class="hamburger">
-        <i class="fa-solid fa-bars"></i>
+        <button style="background-color: transparent; border: none; cursor: pointer" onclick="openHamburger()">
+          <i class="fa-solid fa-bars fa-xl"></i>
+        </button>
       </div>
     </nav>
+
+    <div id="hamburger-bars-items" class="hamburger-bars-items">
+      <a href="home.html">Home</a>
+      <a href="blog.html" class="active">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
 
     <!-- NAVBAR END -->
 
@@ -91,5 +99,6 @@
       </div>
     </section>
     <!-- CONTENT END -->
+    <script src="assets/js/nav.js"></script>
   </body>
 </html>
