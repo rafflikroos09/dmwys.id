@@ -96,6 +96,10 @@ form .title {
   text-align: center;
 }
 
+form .title span {
+  color: orangered;
+}
+
 input,
 select,
 textarea {
