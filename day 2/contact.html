@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,500&display=swap" rel="stylesheet" />
     <link rel="icon" href="assets/img/logo2.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
     <title>🎭 Personal Web</title>
   </head>
@@ -25,13 +26,24 @@
       <div class="right">
         <a href="contact.html">Contact Me</a>
       </div>
+
+      <div class="hamburger">
+        <button style="background-color: transparent; border: none; cursor: pointer" onclick="openHamburger()">
+          <i class="fa-solid fa-bars fa-xl"></i>
+        </button>
+      </div>
     </nav>
+
+    <div id="hamburger-bars-items" class="hamburger-bars-items">
+      <a href="home.html">Home</a>
+      <a href="blog.html" class="active">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
 
     <!-- NAVBAR END -->
     <!-- INPUT FORM -->
     <form action="">
       <div class="title"><h1>GET IN TOUCH</h1></div>
-      <br />
       <br />
       <div class="name">
         <label for="name">Name</label>
@@ -64,5 +76,6 @@
     <!-- END INPUT FORM -->
 
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/nav.js"></script>
   </body>
 </html>

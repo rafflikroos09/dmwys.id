@@ -110,13 +110,18 @@ nav .hamburger {
 
 .content-2 .btn {
   background-color: black;
-  color: white;
   padding: 8px 18px 8px 18px;
   border-radius: 50px;
   font-size: 16px;
   margin-top: 25px;
   margin-bottom: 20px;
   border-style: none;
+}
+
+.content-2 .btn a {
+  color: white;
+  text-decoration: none;
+  margin: auto;
 }
 
 .content-2 a {
@@ -236,6 +241,11 @@ nav .hamburger {
   .content-2 .btn {
     font-size: 13px;
     padding: 5px 15px 5px 15px;
+  }
+
+  .content-2 .btn a {
+    font-size: 11px;
+    margin: auto;
   }
 
   .content-2 a {
