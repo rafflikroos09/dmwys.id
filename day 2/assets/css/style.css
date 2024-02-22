@@ -110,6 +110,9 @@ textarea {
   margin-top: 5px;
   margin-bottom: 15px;
 }
+#subject {
+  width: 370px;
+}
 
 form label {
   font-weight: 500;
