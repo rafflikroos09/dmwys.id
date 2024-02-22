@@ -163,4 +163,8 @@ form div button {
   form label {
     font-size: 13px;
   }
+
+  #subject {
+    width: 320px;
+  }
 }

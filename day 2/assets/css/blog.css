@@ -146,8 +146,18 @@ nav .hamburger {
 }
 
 form {
-  width: 350px;
+  width: 30%;
   margin: 50px auto;
+}
+
+form h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 35px;
+}
+
+form h1 span {
+  color: #ec4d37;
 }
 
 form .date {
@@ -189,15 +199,40 @@ form label {
   font-size: 15px;
 }
 
-form div button {
-  margin-left: 80%;
-  background-color: orangered;
-  padding: 8px 20px;
-  color: white;
-  border-radius: 50px;
+.button-group button {
+  background-color: #ec4d37;
+  padding: 10px 15px;
+  border-radius: 30px;
   border-style: none;
-  font-size: 15px;
-  cursor: pointer;
+  color: white;
+  font-size: 13px;
+  margin-left: 320px;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.checkbox .techno {
+  margin-bottom: 15px;
+}
+
+.checkbox-item {
+  display: flex;
+}
+
+.checkbox-item-1 {
+  display: flex;
+}
+
+.checkbox-item-1 input {
+  width: 20%;
+}
+.checkbox-item-1 label {
+  width: 100%;
+  margin-left: 5px;
 }
 
 form .tech {
@@ -402,5 +437,9 @@ form .input-blog-image-group label {
 
   form label {
     font-size: 13px;
+  }
+
+  .button-group button {
+    margin-left: 235px;
   }
 }
