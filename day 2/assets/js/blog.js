@@ -4,11 +4,17 @@ function addBlog(event) {
   event.preventDefault(); // agar tidak melakukan referesh halaman
 
   let title = document.getElementById("input-blog-title").value;
+  let startDate = document.getElementById("start").value;
+  let endDate = document.getElementById("end").value;
+  let nodeJS = document.getElementById("node-js").value;
   let content = document.getElementById("input-blog-content").value;
 
   // mengelompakan data menjadi object
   let blog = {
     title,
+    startDate,
+    endDate,
+    nodeJS,
     content,
     postAt: new Date(),
   };
@@ -31,25 +37,30 @@ function renderBlog() {
                 <img src="assets/images/blog-img.png" alt="" />
                 </div>
                 <div class="blog-content">
-                <div class="btn-group">
-                    <button class="btn-edit">Edit Post</button>
-                    <button class="btn-post">Delete Post</button>
-                </div>
-                <h1>
-                    <a href="blog-detail.html" target="_blank"
-                    >${dataBlog[index].title}</a
-                    >
-                </h1>
-                <div class="detail-blog-content">
-                    ${getFullDate(dataBlog[index].postAt)} | Ichsan Emrald Alamsyah
-                </div>
-                <p>
-                    ${dataBlog[index].content}
-                </p>
+                  <div class="btn-group">
+                      <button class="btn-edit">Edit Post</button>
+                      <button class="btn-post">Delete Post</button>
+                  </div>
+                      <h1>
+                          <a href="blog-detail.html" target="_blank"
+                          >${dataBlog[index].title}</a
+                          >
+                      </h1>
+                      <h5>${dataBlog[index].startDate} s/d ${dataBlog[index].endDate}</h5>
+                  <div class="detail-blog-content">
+                      ${getFullDate(dataBlog[index].postAt)} | Ichsan Emrald Alamsyah
+                  </div>
+                  <p>
+                      ${dataBlog[index].content}
+                  </p>
 
-                <div style="float:right; margin: 10px">
-                    <p style="font-size: 15px; color:grey">${getDistanceTime(dataBlog[index].postAt)}</p>
-                </div>
+                  <p>
+                      ${dataBlog[index].nodeJS}
+                  </p>
+
+                  <div style="float:right; margin: 10px">
+                      <p style="font-size: 15px; color:grey">${getDistanceTime(dataBlog[index].postAt)}</p>
+                  </div>
                 </div>
             </div>
         `;

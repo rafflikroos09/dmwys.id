@@ -207,6 +207,7 @@ form label {
   color: white;
   font-size: 13px;
   margin-left: 320px;
+  cursor: pointer;
 }
 
 .checkbox {
@@ -342,6 +343,11 @@ form .input-blog-image-group label {
   color: #000000;
 }
 
+.blog-list h5 {
+  margin-top: -20px;
+  font-style: italic;
+}
+
 .blog-list .detail-blog-content {
   font-weight: 300;
   font-size: 12px;
@@ -442,4 +448,6 @@ form .input-blog-image-group label {
   .button-group button {
     margin-left: 235px;
   }
+
+  /* BLOG LIST  */
 }
