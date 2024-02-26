@@ -299,38 +299,61 @@ form .input-blog-image-group label {
 .blog .blog-list {
   margin-top: 80px;
   margin-bottom: 80px;
+  margin: 40px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  flex-direction: column;
+  gap: 30px;
 }
 
 .blog .blog-list .blog-list-item {
-  width: 80%;
-  padding: 15px;
+  width: 300px;
+  padding: 15px 15px 5px 15px;
   margin-bottom: 20px;
   border: 2px solid #dbdbdb;
   border-radius: 8px;
-  display: flex;
-}
-
-.blog .blog-list .blog-list-item .blog-image {
-  flex: 1;
 }
 
 .blog .blog-list .blog-list-item .blog-image img {
-  width: 100%;
-  height: 300px;
+  width: 300px;
+  height: 200px;
   object-fit: cover;
 }
 
-.blog .blog-list .blog-list-item .blog-content {
-  padding-left: 20px;
-  flex: 2;
+.blog .blog-list .blog-list-item {
+  text-align: center;
 }
 
-.blog .blog-list .btn-group {
-  text-align: right;
-  margin-bottom: 20px;
+.blog .blog-list .blog-list-item h1 {
+  font-size: 23px;
+}
+
+.blog .blog-list .blog-list-item h5 {
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+  margin-top: -10px;
+}
+
+.blog .blog-list .blog-list-item .p-1 {
+  font-size: 14px;
+}
+
+.blog .blog-list .blog-list-item .p-2 {
+  font-size: 12px;
+}
+
+.blog .blog-list .blog-list-item .p-4 {
+  font-size: 12px;
+  text-align: end;
+  margin-bottom: 0px;
+  font-style: italic;
+}
+
+.blog .blog-list .blog-list-item .btn-group {
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .blog .blog-list .btn-group .btn-edit {
@@ -346,30 +369,6 @@ form .input-blog-image-group label {
   border-radius: 4px;
   background: #ec4d37;
   color: #fff;
-}
-
-.blog-list h1 a {
-  text-decoration: none;
-  color: #000000;
-}
-
-.blog-list h5 {
-  margin-top: -20px;
-  font-style: italic;
-}
-
-.blog-list .detail-blog-content {
-  font-weight: 300;
-  font-size: 12px;
-  line-height: 20px;
-}
-
-.blog-list .blog-list-item p {
-  margin-top: 20px;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
-  text-align: justify;
 }
 
 /* RESPONSIVE LAYOUT___________________________________________________________ */
@@ -460,4 +459,18 @@ form .input-blog-image-group label {
   }
 
   /* BLOG LIST  */
+  .blog .blog-list {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin-top: 80px;
+    margin-bottom: 80px;
+    margin: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; */
+  }
 }
