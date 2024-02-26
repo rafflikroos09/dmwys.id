@@ -6,16 +6,18 @@ function addBlog(event) {
   let title = document.getElementById("input-blog-title").value;
   let startDate = document.getElementById("start").value;
   let endDate = document.getElementById("end").value;
-  let nodeJS = document.getElementById("node-js").value;
   let content = document.getElementById("input-blog-content").value;
+  let techCheckbox = [...document.querySelectorAll("input[name='tech-icon']:checked")];
+
+  let tech = techCheckbox.map((item) => item.value);
 
   // mengelompakan data menjadi object
   let blog = {
     title,
     startDate,
     endDate,
-    nodeJS,
     content,
+    tech,
     postAt: new Date(),
   };
 
@@ -55,7 +57,7 @@ function renderBlog() {
                   </p>
 
                   <p>
-                      ${dataBlog[index].nodeJS}
+                  ${dataBlog[index].tech.map((item) => `<i class='${item}'></i>`).join("")}
                   </p>
 
                   <div style="float:right; margin: 10px">
