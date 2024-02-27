@@ -34,37 +34,29 @@ function renderBlog() {
 
     document.getElementById("contents").innerHTML += `
         
-            <div class="blog-list-item">
-                <div class="blog-image">
-                <img src="assets/images/blog-img.png" alt="" />
-                </div>
-                <div class="blog-content">
-                  <div class="btn-group">
-                      <button class="btn-edit">Edit Post</button>
-                      <button class="btn-post">Delete Post</button>
-                  </div>
-                      <h1>
-                          <a href="blog-detail.html" target="_blank"
-                          >${dataBlog[index].title}</a
-                          >
-                      </h1>
-                      <h5>${dataBlog[index].startDate} s/d ${dataBlog[index].endDate}</h5>
-                  <div class="detail-blog-content">
-                      ${getFullDate(dataBlog[index].postAt)} | Ichsan Emrald Alamsyah
-                  </div>
-                  <p>
-                      ${dataBlog[index].content}
-                  </p>
-
-                  <p>
-                  ${dataBlog[index].tech.map((item) => `<i class='${item}'></i>`).join("")}
-                  </p>
-
-                  <div style="float:right; margin: 10px">
-                      <p style="font-size: 15px; color:grey">${getDistanceTime(dataBlog[index].postAt)}</p>
-                  </div>
-                </div>
-            </div>
+    <div class="blog-list-item">
+    <div class="blog-content">
+      <div class="blog-image">
+        <img src="assets/img/blog.jpg" alt="">
+      </div>
+      <div class="blog-title">
+        <h1>${dataBlog[index].title}</h1>
+        <h5>${dataBlog[index].startDate} s/d ${dataBlog[index].endDate}</h5>
+      </div>
+      <div class="blog-detail">
+        <p class="p-1">${dataBlog[index].content} </p>
+        <p class="p-2"> ${getFullDate(dataBlog[index].postAt)} | Budi Kroos</p>
+        <p class="p-3"> ${dataBlog[index].tech.map((item) => `<i class='${item}'></i>`).join("")}</p>
+      </div>
+      <div class="btn-group">
+        <button class="btn-edit">Edit Post</button>
+        <button class="btn-post">Delete Post</button>
+      </div>
+      <div class="blog-time">
+        <p class="p-4">${getDistanceTime(dataBlog[index].postAt)}</p>
+      </div>
+    </div>
+</div>
         `;
   }
 }

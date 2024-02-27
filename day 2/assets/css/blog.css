@@ -338,10 +338,17 @@ form .input-blog-image-group label {
 
 .blog .blog-list .blog-list-item .p-1 {
   font-size: 14px;
+  width: 200px;
+  text-align: center;
 }
 
 .blog .blog-list .blog-list-item .p-2 {
   font-size: 12px;
+}
+
+.blog .blog-list .blog-list-item .blog-detail .p-3 {
+  font-size: 20px;
+  padding: 10px;
 }
 
 .blog .blog-list .blog-list-item .p-4 {
