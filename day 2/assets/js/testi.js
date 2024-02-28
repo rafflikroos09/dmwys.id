@@ -85,6 +85,14 @@
 
 // document.getElementById("testimonials").innerHTML = dataForHTML;
 
+// =======================================================================
+// =======================             ===================================
+// =======================             ===================================
+// =======================  VERSION HOF $ CALLBACK===================================
+// =======================             ===================================
+// =======================             ===================================
+// =======================================================================
+
 const data = [
   {
     name: "Tony Hawk ",
@@ -130,9 +138,9 @@ function Testimonials() {
           class="profile-testimonial"
           src="${data.image}"
         />
-        <p class="quote">${data.comment}</p>
+        <p class="quote">"${data.comment}"</p>
         <p class="author">- ${data.name}</p>
-        <p class="author"><i class="fa-solid fa-star"></i> ${data.rating}</p>
+        <p class="author">${data.rating} <i class="fa-solid fa-star"></i></p>
       </div>
     `;
   });
@@ -159,9 +167,9 @@ const FilterTestimonial = (rating) => {
             class="profile-testimonial"
             src="${data.image}"
           />
-          <p class="quote">${data.comment}</p>
+          <p class="quote">"${data.comment}"</p>
           <p class="author">- ${data.name}</p>
-          <p class="author"><i class="fa-solid fa-star"></i> ${data.rating}</p>
+          <p class="author"> ${data.rating} <i class="fa-solid fa-star"></i></p>
         </div>
       `;
     });

@@ -232,6 +232,7 @@ form label {
 .checkbox-item-1 input {
   width: 20%;
 }
+
 .checkbox-item-1 label {
   width: 100%;
   margin-left: 5px;
@@ -338,7 +339,6 @@ form .input-blog-image-group label {
 
 .blog .blog-list .blog-list-item .p-1 {
   font-size: 14px;
-  width: 200px;
   text-align: center;
 }
 
@@ -346,9 +346,12 @@ form .input-blog-image-group label {
   font-size: 12px;
 }
 
-.blog .blog-list .blog-list-item .blog-detail .p-3 {
-  font-size: 20px;
-  padding: 10px;
+.blog .blog-list .blog-list-item .p-3 {
+  font-size: 30px;
+}
+
+.blog .blog-list .blog-list-item .p-3 i {
+  padding-left: 10px;
 }
 
 .blog .blog-list .blog-list-item .p-4 {
