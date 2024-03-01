@@ -1,0 +1,15 @@
+{
+  "name": "dmwys",
+  "version": "1.0.0",
+  "description": "personal website",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "raffli",
+  "license": "ISC",
+  "dependencies": {
+    "expres": "^0.0.5"
+  }
+}
